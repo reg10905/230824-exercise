@@ -1,0 +1,133 @@
+@import url(https://fonts.google.com/specimen/Hanken+Grotesk);
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    display: flex;
+    width: 600px;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 1px 0px 20px 2px rgb(0, 0, 0.4);
+}
+/* 左邊 */
+.left{
+    color: white;
+    padding: 20px;
+    width: 40%;
+    border-radius: 20px;
+    background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
+.left h4{
+    text-align: center;
+}
+.left h3{
+    text-align: center;
+}
+.left p{
+    text-align: center;
+}
+.score-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    width: 74px;
+    height: 74px;
+    margin: 0 auto;
+    border-radius: 100%;
+    box-shadow: inset 1px 1px 12px 0px hsla(256, 72%, 46%, 1);
+    flex-direction: column;
+}
+.big-score{
+    color:white;
+    font-weight: bold;
+    font-size: 60px;
+}
+/* 右邊 */
+.right{
+    width: 50%;
+    padding: 20px;
+}
+.score-icon{
+    display: flex;
+}
+.score-icon img{
+    margin-right: 5px;
+}
+.reaction{
+    display: flex;
+    justify-content: space-between;
+    color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%, 0.1);
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 10px;
+}
+.memory{
+    display: flex;
+    justify-content: space-between;
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 0.1);
+    margin-bottom: 15px;
+    padding: 15px;
+}
+.verbal{
+    display: flex;
+    justify-content: space-between;
+    color: hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%, 0.1);
+    margin-bottom: 15px;
+    padding: 15px;
+}
+.visual{
+    display: flex;
+    justify-content: space-between;
+    color: hsl(234, 85%, 45%);
+    background-color: hsla(234, 85%, 45%, 0.1);
+    margin-bottom: 15px;
+    padding: 15px;
+}
+.black-text{
+    font-weight: bold;
+    color: black
+}
+.gray{
+    color: gray
+}
+button{
+    margin-top: 30px;
+    padding: 15px 30px;
+    border: none;
+    color: white;
+    background-color: hsl(224, 30%, 27%);
+    width: 100%;
+    border-radius: 20px;
+}
+@media (max-width: 760px) {
+    .left {
+        width: 100%;
+        padding: 0px;
+        border-radius: 0px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .left-text{
+        padding: 20px;
+        text-align: center;
+    }
+    .right{
+        padding: 0;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .container{
+        width: 100%;
+        flex-direction: column;
+        border-radius: 0px;
+        overflow: hidden;
+        padding: 0;
+    }
+}
